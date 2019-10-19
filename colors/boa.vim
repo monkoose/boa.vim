@@ -12,35 +12,6 @@ endif
 let g:colors_name='boa'
 
 " }}}
-" Setup Terminal Colors For Neovim: {{{
-
-" if has('nvim')
-"   let g:terminal_color_0 = s:bg0[0]
-"   let g:terminal_color_8 = s:gray[0]
-"
-"   let g:terminal_color_1 = s:red[0]
-"   let g:terminal_color_9 = s:red[0]
-"
-"   let g:terminal_color_2 = s:green[0]
-"   let g:terminal_color_10 = s:green[0]
-"
-"   let g:terminal_color_3 = s:yellow[0]
-"   let g:terminal_color_11 = s:yellow[0]
-"
-"   let g:terminal_color_4 = s:blue[0]
-"   let g:terminal_color_12 = s:blue[0]
-"
-"   let g:terminal_color_5 = s:purple[0]
-"   let g:terminal_color_13 = s:purple[0]
-"
-"   let g:terminal_color_6 = s:aqua[0]
-"   let g:terminal_color_14 = s:aqua[0]
-"
-"   let g:terminal_color_7 = s:fg4[0]
-"   let g:terminal_color_15 = s:fg1[0]
-" endif
-
-" }}}
 " Syntax Highlighting: {{{
 hi Normal      guifg=#b8af96 guibg=#26201c gui=NONE
 hi BoaRed      guifg=#d35b4b guibg=NONE    gui=NONE
@@ -210,6 +181,7 @@ hi! link CocHintSign BoaAqua
 hi! CocHoverRange guifg=NONE guibg=#2F3829 gui=NONE
 hi! link CocCursorRange CocHoverRange
 hi! link HighlightedyankRegion CocHoverRange
+hi! link CocFloating NormalFloat
 
 " }}}
 
@@ -505,6 +477,33 @@ hi! link jsonKeyword BoaGreen
 hi! link jsonQuote BoaGreen
 hi! link jsonBraces BoaLight1
 hi! link jsonString BoaLight1
+
+" }}}
+" Terminal Colors: {{{
+
+let g:terminal_color_0 = '#26201c'
+let g:terminal_color_8 = '#6e685a'
+
+let g:terminal_color_1 = '#d35b4b'
+let g:terminal_color_9 = '#d35b4b'
+
+let g:terminal_color_2 = '#8f9e44'
+let g:terminal_color_10 = '#8f9e44'
+
+let g:terminal_color_3 = '#c57c41'
+let g:terminal_color_11 = '#caa247'
+
+let g:terminal_color_4 = '##7680ac'
+let g:terminal_color_12 = '##7680ac'
+
+let g:terminal_color_5 = '#b2809f'
+let g:terminal_color_13 = '#b2809f'
+
+let g:terminal_color_6 = '#70a195'
+let g:terminal_color_14 = '#70a195'
+
+let g:terminal_color_7 = '#8c8572'
+let g:terminal_color_15 = '#b8af96'
 
 " }}}
 
