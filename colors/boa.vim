@@ -46,7 +46,7 @@ hi! link Special BoaOrange
 hi Underlined guifg=#919697 guibg=NONE gui=underline
 " Ignore
 hi Error guifg=#d35b4b guibg=bg gui=bold,inverse
-hi Todo guifg=fg guibg=NONE gui=bold
+hi Todo guifg=fg guibg=NONE gui=bold,underline
 
 " see :help highlight-default
 hi CursorLine guifg=NONE guibg=#2b2927 gui=NONE
@@ -84,8 +84,8 @@ hi! link Question BoaGreen
 hi QuickFixLine guifg=NONE guibg=#453f3b gui=NONE
 hi Search    guifg=#826a33 guibg=#26201c    gui=inverse
 hi! link SpecialKey VertSplit
-hi SpellBad guifg=NONE guibg=#402F2F gui=undercurl guisp=#d35b4b
-hi SpellCap guifg=NONE guibg=NONE gui=undercurl
+hi SpellBad guifg=NONE guibg=NONE gui=undercurl guisp=#d33e2a
+hi SpellCap guifg=NONE guibg=NONE gui=undercurl guisp=#a0b82e
 hi! link SpellLocal SpellCap
 hi! link SpellRare SpellCap
 hi StatusLine guifg=NONE guibg=#48382f gui=NONE
@@ -118,25 +118,6 @@ hi EasyMotionTarget guifg=#d35b4b guibg=NONE gui=bold
 hi! link EasyMotionTarget2First EasyMotionTarget
 hi EasyMotionTarget2Second guifg=#c57c41 guibg=NONE gui=bold
 hi! link EasyMotionShade Comment
-
-" }}}
-" GitGutter: {{{
-
-hi! link GitGutterAdd BoaGreen
-hi! link GitGutterChange BoaAqua
-hi! link GitGutterDelete BoaRed
-hi! link GitGutterChangeDelete BoaAqua
-
-" }}}
-" Asynchronous Lint Engine: {{{
-
-hi ALEError guifg=NONE guibg=NONE gui=undercurl guisp=#d35b4b
-hi ALEWarning guifg=NONE guibg=NONE gui=undercurl guisp=#caa247
-hi ALEInfo guifg=NONE guibg=NONE gui=undercurl guisp=#898fac
-
-hi! link ALEErrorSign BoaRed
-hi! link ALEWarningSign BoaYellow
-hi! link ALEInfoSign BoaAqua
 
 " }}}
 " Netrw: {{{
@@ -175,13 +156,23 @@ hi! link NERDTreeToggleOff BoaRed
 " Coc: {{{
 
 hi! link CocErrorSign BoaRed
-hi! link CocWarningSign BoaOrange
-hi! link CocInfoSign BoaYellow
+hi! link CocWarningSign BoaYellow
+hi! link CocInfoSign BoaGreen
 hi! link CocHintSign BoaAqua
+hi! CocHighlightText guifg=NONE guibg=#363D45 gui=NONE
 hi! CocHoverRange guifg=NONE guibg=#2F3829 gui=NONE
 hi! link CocCursorRange CocHoverRange
 hi! link HighlightedyankRegion CocHoverRange
 hi! link CocFloating NormalFloat
+hi CocErrorHighlight guifg=NONE guibg=NONE gui=undercurl guisp=#d33e2a
+hi CocWarningHighlight guifg=NONE guibg=NONE gui=undercurl guisp=#dac230
+hi CocInfoHighlight guifg=NONE guibg=NONE gui=undercurl guisp=#a0b82e
+hi CocHintHighlight guifg=NONE guibg=NONE gui=undercurl guisp=#70a17c
+hi CocGitRemovedSign guifg=#d35b4b guibg=NONE gui=bold
+hi CocGitTopRemovedSign guifg=#d35b4b guibg=NONE gui=bold
+hi CocGitChangedSign guifg=#70a17c guibg=NONE gui=bold
+hi CocGitChangeRemovedSign guifg=#70a17c guibg=NONE gui=bold
+hi CocGitAddedSign guifg=#8f9e44 guibg=NONE gui=bold
 
 " }}}
 
