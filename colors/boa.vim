@@ -24,7 +24,7 @@ hi BoaAqua     guifg=#70a17c guibg=NONE    gui=NONE
 hi BoaOrange   guifg=#c57c41 guibg=NONE    gui=NONE
 hi BoaGray     guifg=#817466 guibg=NONE    gui=NONE
 hi BoaBrown    guifg=#826a33 guibg=NONE    gui=NONE
-hi BoaLight1    guifg=#b8af96 guibg=NONE    gui=NONE
+hi BoaLight1   guifg=#b8af96 guibg=NONE    gui=NONE
 
 " see :help group-name
 hi! link Comment BoaGray
@@ -73,7 +73,7 @@ hi IncSearch guifg=#518233 guibg=bg gui=inverse
 " Substitute
 hi NonText guifg=#453f3b guibg=NONE gui=NONE
 hi! link LineNr NonText
-hi MatchParen   guifg=#c57c41 guibg=NONE    gui=bold
+hi MatchParen   guifg=#cc752f guibg=NONE    gui=bold
 hi ModeMsg   guifg=#caa247 guibg=NONE    gui=bold
 " MsgArea
 " MsgSeparator
@@ -82,14 +82,14 @@ hi NormalFloat guifg=NONE guibg=#272E22 gui=NONE
 hi NormalNC guifg=#A8A089 guibg=#1C1815 gui=NONE
 hi! link Question BoaGreen
 hi QuickFixLine guifg=NONE guibg=#453f3b gui=NONE
-hi Search    guifg=#826a33 guibg=#26201c    gui=inverse
+hi Search    guifg=#26201c guibg=#826a33 gui=NONE
 hi! link SpecialKey VertSplit
 hi SpellBad guifg=NONE guibg=NONE gui=undercurl guisp=#d33e2a
 hi SpellCap guifg=NONE guibg=NONE gui=undercurl guisp=#a0b82e
 hi! link SpellLocal SpellCap
 hi! link SpellRare SpellCap
-hi StatusLine guifg=NONE guibg=#48382f gui=NONE
-hi StatusLineNC guifg=#a89984 guibg=#48382f gui=NONE
+hi StatusLine guifg=#b8af96 guibg=#48382f gui=NONE
+hi StatusLineNC guifg=#948774 guibg=#48382f gui=NONE
 hi TabLine    guifg=#7c6f64 guibg=#2b2927    gui=NONE
 hi TabLineSel    guifg=#8f9e44 guibg=#2b2927    gui=NONE
 hi! link TabLineFill Tabline
@@ -104,6 +104,8 @@ hi PmenuSel guifg=#453f3b guibg=#919697 gui=bold
 hi! link  PmenuSbar Visual
 hi PmenuThumb guifg=NONE guibg=#7c6f64 gui=NONE
 
+hi User1 guifg=#221111 guibg=#7c7e1d
+hi User2 guifg=#d35b4b guibg=#48382f gui=bold
 " qfLineNr
 " qfError
 " qfFileName"
@@ -164,6 +166,9 @@ hi! CocHoverRange guifg=NONE guibg=#2F3829 gui=NONE
 hi! link CocCursorRange CocHoverRange
 hi! link HighlightedyankRegion CocHoverRange
 hi! link CocFloating NormalFloat
+hi! link CocOutlineName BoaLight1
+hi! link CocListPath StatusLineNC
+hi CocListMode  guifg=#8f9e44 guibg=#48382f gui=bold
 hi CocErrorHighlight guifg=NONE guibg=NONE gui=undercurl guisp=#d33e2a
 hi CocWarningHighlight guifg=NONE guibg=NONE gui=undercurl guisp=#dac230
 hi CocInfoHighlight guifg=NONE guibg=NONE gui=undercurl guisp=#a0b82e
@@ -484,8 +489,8 @@ let g:terminal_color_10 = '#8f9e44'
 let g:terminal_color_3 = '#c57c41'
 let g:terminal_color_11 = '#caa247'
 
-let g:terminal_color_4 = '##7680ac'
-let g:terminal_color_12 = '##7680ac'
+let g:terminal_color_4 = '#7680ac'
+let g:terminal_color_12 = '#7680ac'
 
 let g:terminal_color_5 = '#b2809f'
 let g:terminal_color_13 = '#b2809f'
